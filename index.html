@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title> Blog Dev News </title>
+</head>
+
+<body>
+    <!-- Cabeçalho principal -->
+    <header class="header-site">
+        <h1 class="header-title">The Dev News </h1>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="main-content">
+
+        <!-- Seção de notícias em destaque e posts recentes -->
+        <div id="secao-conteudo">
+            <!-- Post em destaque -->
+            <section class="secao-destaque">
+                <div class="destaque-info">
+                    <span class="destaque-categoria"> opinião </span>
+                    <h2 class="destaque-titulo"> Como é ser um desenvolvedor </h2>
+                    <p class="destaque-autor"><b>Por</b> Fabio Tetsuo</p>
+                </div>
+            </section>
+
+            <!-- Lista de posts recentes -->
+            <section class="secao-posts-recentes">
+                <div class="cabecalho-posts-recentes">
+                    <h3 class="titulo-posts-recentes"> Posts mais recentes </h3>
+                    <a class="link-ver-todos" href="#"> Ver todos </a>
+                </div>
+
+                <div class="grade-cards">
+                    <!-- Card de post individual -->
+                    <article class="card-post">
+                        <img src="./imagem/banner1.svg" alt="Imagem">
+                        <div class="conteudo-card">
+                            <span class="tag-post"> desenvolvimento </span>
+                            <h3 class="titulo-post"> Desenvolvimento mobile </h3>
+                            <p class="autor-post"><b>Por</b> Fabio Tetsuo</p>
+                            <p class="resumo-post"> Esse conteúdo foi criado pelo Fabio Tetsuo, mas eu tive o prazer de colaborar diretamente no desenvolvimento. Mobile é sobre criar soluções que facilitam a vida das pessoas — e fazer isso em equipe deixa tudo ainda mais poderoso. 🚀📱
+
+                            </p>
+                            <p class="data-post"> 22 Agosto 2022 </p>
+                        </div>
+                    </article>
+
+                    <!-- Repetição de cards para exemplo -->
+                    <article class="card-post">
+                        <img src="imagem/banner2.svg" alt="Imagem">
+                        <div class="conteudo-card">
+                            <span class="tag-post"> saúde </span>
+                            <h3 class="titulo-post"> Balancear vida profissional e pessoal </h3>
+                            <p class="autor-post"><b>Por</b> Ridho Satriawan</p>
+                            <p class="resumo-post"> Tive a oportunidade de contribuir no desenvolvimento. Falar sobre equilíbrio é fácil, mas viver isso é desafio de todo dev — e justamente por isso, colaborar nesse conteúdo foi tão valioso. Porque no fim, produtividade também é saber a hora de pausar. 😉
+
+                            </p>
+                            <p class="data-post"> 22 Agosto 2022 </p>
+                        </div>
+                    </article>
+
+                    <article class="card-post">
+                        <img src="imagem/banner3.svg" alt="Imagem">
+                        <div class="conteudo-card">
+                            <span class="tag-post"> desenvolvimento </span>
+                            <h3 class="titulo-post"> Configurando VSCode </h3>
+                            <p class="autor-post"><b>Por</b> Fabio Tetsuo</p>
+                            <p class="resumo-post"> Configurar o VSCode pode parecer simples, mas quando bem feito, ele vira quase uma extensão do nosso cérebro. 😄 Cada ajuste, atalho e extensão escolhida faz diferença no fluxo — e foi muito legal ajudar a montar esse setup redondo! </p>
+                            <p class="data-post"> 22 Agosto 2022 </p>
+                        </div>
+                    </article>
+
+                    <article class="card-post">
+                        <img src="imagem/banner4.svg" alt="Imagem">
+                        <div class="conteudo-card">
+                            <span class="tag-post"> produtividade </span>
+                            <h3 class="titulo-post"> 2 monitores ou 1 ultrawide? </h3>
+                            <p class="autor-post"><b>Por</b> Fulano da Silva</p>
+                            <p class="resumo-post"> A dúvida é clássica: vale mais dois monitores ou um ultrawide? Cada setup tem seu charme — o importante é encontrar o que encaixa melhor no seu fluxo. E como dev, posso garantir: uma boa tela faz toda a diferença na produtividade. 👨‍💻🖥️ </p>
+                            <p class="data-post"> 22 Agosto 2022 </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- Barra lateral com posts populares e categorias -->
+        <aside id="barra-lateral">
+
+            <!-- Seção de posts populares -->
+            <div class="secao-populares">
+                <div class="titulo-lateral">
+                    <h3> Posts populares </h3>
+                </div>
+
+                <div class="lista-populares">
+                    <ul>
+                        <li class="item-popular">
+                            <img src="./imagem/img1.svg" alt="imagem">
+                            <div class="info-popular">
+                                <h3 class="titulo-popular"> Desenvolvimento atual </h3>
+                                <p> 22 Agosto 2022 </p>
+                            </div>
+                        </li>
+                        <li class="item-popular">
+                            <img src="./imagem/img2.svg" alt="imagem">
+                            <div class="info-popular">
+                                <h3 class="titulo-popular"> GitLab vs GitHub </h3>
+                                <p> 22 Agosto 2022 </p>
+                            </div>
+                        </li>
+                        <li class="item-popular">
+                            <img src="imagem/img3.svg" alt="imagem">
+                            <div class="info-popular">
+                                <h3 class="titulo-popular"> Café atrapalha? </h3>
+                                <p> 22 Agosto 2022 </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Seção de categorias -->
+            <div class="secao-categorias">
+                <div class="titulo-lateral">
+                    <h3> Categorias </h3>
+                </div>
+
+                <div class="lista-categorias">
+                    <ul>
+                        <li><a href="#">&gt; saúde <span class="quantidade">(1)</span></a></li>
+                        <li><a href="#">&gt; desenvolvimento <span class="quantidade">(2)</span></a></li>
+                        <li><a href="#">&gt; produtividade <span class="quantidade">(2)</span></a></li>
+                        <li><a href="#">&gt; opinião <span class="quantidade">(1)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer class="rodape">
+        <p> Copyright &copy; The Dev News </p>
+    </footer>
+</body>
+
+</html>

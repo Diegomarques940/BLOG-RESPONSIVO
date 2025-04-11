@@ -1,0 +1,258 @@
+/*
+============================================================
+Estilização principal para o Blog The Dev News
+Inclui: layout, tipografia, cores, responsividade
+Autor: @Diegomarques.Dev
+============================================================
+*/
+
+/* Reset de margem, padding e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definições gerais do corpo da página */
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* ========================== HEADER ========================== */
+  .header-site {
+    background: #02A28F;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo (título) à esquerda */
+    align-items: flex-start;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  /* ========================== MAIN ========================== */
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin: 1.5rem 5%;
+  }
+  
+  /* Seção principal de conteúdo */
+  #secao-conteudo {
+    flex: 2;
+  }
+  
+  /* ========================== DESTAQUE ========================== */
+  .secao-destaque {
+    background: linear-gradient(to bottom, rgba(102, 102, 102, 0.0), #000), url("./imagem/banner.png") center/cover no-repeat;
+    border-radius: 0.5rem;
+    height: 27rem;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+    color: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.3rem;
+  }
+  
+  .destaque-info span {
+    font-weight: 400;
+  }
+  
+  .destaque-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .destaque-autor {
+    font-weight: 500;
+  }
+  
+  /* ========================== POSTS RECENTES ========================== */
+  .secao-posts-recentes {
+    flex: 3;
+  }
+  
+  .cabecalho-posts-recentes {
+    background: #02A28F;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo-posts-recentes {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .link-ver-todos {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+  /* Layout de cards */
+  .grade-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card-post {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-post img {
+    width: 100%;
+    height: 9.5rem;
+    object-fit: cover;
+  }
+  
+  .conteudo-card {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .tag-post {
+    color: #02A28F;
+    font-size: 1rem;
+  }
+  
+  .titulo-post {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .autor-post,
+  .resumo-post,
+  .data-post {
+    font-size: 1rem;
+    color: #616161;
+  }
+  
+  /* ========================== BARRA LATERAL ========================== */
+  #barra-lateral {
+    flex: 1;
+    padding-right: 5%;
+  }
+  
+  .titulo-lateral {
+    background: #02A28F;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Posts populares da lateral */
+  .lista-populares {
+    margin-bottom: 1.5rem;
+  }
+  
+  .item-popular {
+    display: flex;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .item-popular img {
+    width: 8.5rem;
+    height: 4.5rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .info-popular {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titulo-popular {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Lista de categorias com números à direita */
+  .lista-categorias ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lista-categorias li {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-weight: 600;
+    color: #616161;
+  }
+  
+  .lista-categorias a {
+    text-decoration: none;
+    color: #616161;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .quantidade {
+    margin-left: auto;
+    text-align: right;
+  }
+  
+  /* ========================== RODAPÉ ========================== */
+  .rodape {
+    background: #02A28F;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+  }
+  
+  /* ========================== RESPONSIVO ========================== */
+  @media (max-width: 768px) {
+    body {
+      width: 100%;
+    }
+  
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .grade-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    #barra-lateral {
+      padding: 5%;
+    }
+  }
+  
